@@ -51,9 +51,10 @@ st.title('Clickbait Detector Project Proposal')
 
 # Introduction and Background
 st.header('Introduction and Background')
-st.write('Topic')
-st.write('Literature')
-st.write('Datasets')
+st.write('In today’s digital landscape, where online content is monetized based on views and clicks, content creators often resort to clickbait—misleading or exaggerated titles designed to attract attention. This strategy, while effective in driving traffic, leads to user frustration and contributes to the spread of misinformation. Detecting and curbing clickbait has become increasingly important to improve the quality of content and user experience across platforms.')
+
+st.write('Although existing models have been developed to detect clickbait in specific forms of media, they often struggle to generalize across different types, such as news articles and video titles. This project aims to build an AI model that detects clickbait across multiple media platforms by analyzing common features associated with deceptive headlines. Through a combination of data preprocessing and machine learning techniques, our goal is to create a more robust solution that can be applied to various forms of online content.')
+
 
 # Problem Definition
 st.header('Problem Definition')
