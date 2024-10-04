@@ -69,8 +69,8 @@ st.write('In an effort to solve this problem, we aim to create an AI model that 
 
 # Methods
 st.header('Methods')
-st.write('- **Preprocessing methods**: (3+ preprocessing techniques)')
-st.write('- **Machine learning algorithms**: (3+ unsupervised and supervised algorithms)')
+st.write('To effectively address the problem of clickbait detection, we will implement a combination of preprocessing methods and machine learning algorithms, ensuring the model generalizes well across different types of media. Preprocessing will play a crucial role in cleaning and structuring the data before training. We will begin with data cleaning,which includes removing irrelevant or redundant information, such as special characters, stop words, and noisy data that do not contribute meaningfully to the classification task. Then, feature engineering will be applied, where we will create new features like the length of the title, or the use of punctuation marks, all of which are commonly associated with clickbait. Finally, we will use data transformation techniques to transform raw textual data into numerical representations that reflect word importance across the dataset.')
+st.write('For machine learning, we will explore both unsupervised and supervised techniques. First, K-means clustering, an unsupervised learning method, will help in identifying patterns in titles and grouping similar types of titles, which can provide insights into common clickbait strategies. For supervised methods, we will use logistic regression, a simple but effective binary classification method, to detect whether a title is clickbait or not based on labeled training data. We will also implement random forest, a more complex and robust algorithm that combines decision trees to improve prediction accuracy and handle large datasets.')
 
 # Potential Results and Discussion
 st.header('Potential Results and Discussion')
@@ -85,9 +85,9 @@ st.write('- IEEE format')
 
 # Gantt Chart
 st.header('Gantt Chart')
-if st.button('Access the Chart'):
+if st.button('Access the File'):
     # Media
-    st.image('./GANTT.png', width=1600)
+    st.image('./GANTT.png', width=1200)
     
 
 
