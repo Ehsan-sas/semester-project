@@ -105,7 +105,7 @@ with st.expander("Contributions Table"):
 
 
 # Media
-st.image('./GANTT.png')
+st.image('./GANTT.png', width=800)
 
 
 
