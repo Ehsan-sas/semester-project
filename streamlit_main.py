@@ -13,7 +13,7 @@ st.markdown(
         background-color: #FFFFF;
     }
     h1, h2, h3 {
-        color: #000080;
+        color: #4169E1;
     }
     </style>
     """,
