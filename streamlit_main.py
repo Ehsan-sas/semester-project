@@ -2,12 +2,27 @@ import streamlit as st
 import pandas as pd
 
 
-base="dark"  # You can set this to "light" or "dark"
-primaryColor="#1f77b4"  # Customize the primary color
-backgroundColor="#0E1117"  # Background color of the app
-secondaryBackgroundColor="#262730"  # Background color of the sidebar and other secondary components
-textColor="#FAFAFA"  # Text color
-font="sans serif"  # Font style ("sans serif", "serif", "monospace")
+# Inject custom CSS
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #f5f5f5;
+    }
+    .css-18ni7ap.e8zbici2 {
+        background-color: #31333F;
+    }
+    h1 {
+        color: #E694FF;
+    }
+    h2, h3 {
+        color: #1f77b4;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # Title
 st.title('Clickbait Detector Project Proposal')
