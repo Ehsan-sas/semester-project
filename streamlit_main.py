@@ -51,9 +51,9 @@ st.title('Clickbait Detector Project Proposal')
 
 # Introduction and Background
 st.header('Introduction and Background')
-st.subheader('Topic')
-st.subheader('Literature')
-st.subheader('Datasets')
+st.write('Topic')
+st.write('Literature')
+st.write('Datasets')
 
 # Problem Definition
 st.header('Problem Definition')
