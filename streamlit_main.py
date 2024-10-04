@@ -24,7 +24,9 @@ st.markdown(
 # Sidebar
 with st.sidebar:
     st.title("Sidebar Menu")
-    st.button("Click Me")
+    st.button("Gantt Chart")
+    st.button("Contribution Table")
+    st.button("Team members")
 
 # Main content
 st.title("Main Section")
