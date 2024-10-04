@@ -93,7 +93,7 @@ with st.expander('Access the Chart'):
 # Contributions
 st.header('Contributions')
 contributions = {
-    'Name': ['Aristei Zachary','Stephan Tserovski', 'Narges Moreini', 'Jay Cha', 'Ehsan Asadollahi'],
+    'Name': ['Aristei Zachary','Stephan Tserovski', 'Narges Moeini', 'Jay Cha', 'Ehsan Asadollahi'],
     'Contributions': ['Introduction','Problem Definition and Gantt Chart','Methods','Potential Results and Discussion','Streamlit and Video']
 }
 
