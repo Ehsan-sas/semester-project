@@ -23,9 +23,9 @@ st.markdown(
 
 # Contributions
 contributions = {
-    "Stephan Tserovski": "Problem Definition and Gantt Chart",
-    "Jay Cha": "Potential Results and Discussion",
-    "Narges Moeini": "Methods"
+    "Stephan Tserovski": ["Problem Definition and Gantt Chart"],
+    "Jay Cha": ["Potential Results and Discussion"],
+    "Narges Moeini": ["Methods"]
 }
 
 df = pd.DataFrame(contributions)
