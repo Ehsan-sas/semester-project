@@ -30,11 +30,8 @@ contributions = {
 df = pd.DataFrame(contributions)
 
 
-# Sidebar button
-if st.button('Contributions'):
-    with st.expander("Contributions Table"):
-        st.write("Here is the table:")
-        st.write(df.to_html(index=False), unsafe_allow_html=True)  # Display the table when the button is clicked
+
+
     
 
 
@@ -78,6 +75,10 @@ st.write('- IEEE format')
 # Gantt Chart
 st.header('Gantt Chart')
 st.markdown('[Click here to view Gantt Chart](Gantt Chart.xlsx)')
+
+# Contribution Table
+with st.expander("Contributions Table"):
+    st.write(df.to_html(index=False), unsafe_allow_html=True)  # Display the table when the button is clicked
 
 
 
