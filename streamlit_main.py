@@ -21,19 +21,22 @@ st.markdown(
 )
 
 
-# Sidebar
-with st.sidebar:
-    st.title("Sidebar Menu")
-    st.button("Gantt Chart")
+# Contributions
+contributions = {
+    "Stephan Tserovski": "Problem Definition and Gantt Chart",
+    "Jay Cha": "Potential Results and Discussion",
+    "Narges Moeini": "Methods"
+}
 
-    # Add a button
-if  st.button('Contribution Table'):
+df = pd.DataFrame(contributions)
+
+
+# Sidebar button
+if st.sidebar.button('Show Table'):
     st.write("Here is the table:")
     st.table(df)  # Display the table when the button is clicked
 else:
-    st.write("Click the button to see the table.")
-
-    st.button("Team members")
+    st.write("Click the button in the sidebar to see the table.")
 
 # Main content
 st.title("Main Section")
@@ -89,12 +92,5 @@ st.markdown('[Click here to view Gantt Chart](Gantt Chart.xlsx)')
 
 
 
-# Contributions
-contributions = {
-    "Stephan Tserovski": "Problem Definition and Gantt Chart",
-    "Jay Cha": "Potential Results and Discussion",
-    "Narges Moeini": "Methods"
-}
 
-df = pd.DataFrame(contributions)
 
