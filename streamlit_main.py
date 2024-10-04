@@ -86,7 +86,9 @@ st.write('- IEEE format')
 # Gantt Chart
 st.header('Gantt Chart')
 if st.button('Access the File'):
-    st.markdown('<meta http-equiv="refresh" content="0; url=https://gtvault-my.sharepoint.com/:x:/g/personal/stserovski3_gatech_edu/EauHMjPS8zZApkkLDNeOTaUBeoK81qgKnSyrHNyyek6beQ?e=Fddn7J">', unsafe_allow_html=True)
+    # Media
+    st.image('./GANTT.png', width=1800)
+    
 
 
 
@@ -104,8 +106,7 @@ with st.expander("Contributions Table"):
     st.write(df.to_html(index=False), unsafe_allow_html=True)  # Display the table when the button is clicked
 
 
-# Media
-st.image('./GANTT.png', width=800)
+
 
 
 
