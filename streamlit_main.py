@@ -20,13 +20,40 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# Contributions
+contributions = {
+    "Stephan Tserovski": "Problem Definition and Gantt Chart",
+    "Jay Cha": "Potential Results and Discussion",
+    "Narges Moeini": "Methods"
+}
+
+df = pd.DataFrame(contributions)
+
 
 # Sidebar
 with st.sidebar:
     st.title("Sidebar Menu")
     st.button("Gantt Chart")
-    st.button("Contribution Table")
+
+    # Add a button
+if  st.button('Contribution Table'):
+    st.write("Here is the table:")
+    st.table(df)  # Display the table when the button is clicked
+
     st.button("Team members")
+
+# Main content
+st.title("Main Section")
+st.write("Here is the main content of the app.")
+
+# Custom containers for structured layouts
+with st.container():
+    st.header("Section 1")
+    st.write("Content for section 1")
+
+with st.container():
+    st.header("Section 2")
+    st.write("Content for section 2")
 
 
 
@@ -35,9 +62,9 @@ st.title('Clickbait Detector Project Proposal')
 
 # Introduction and Background
 st.header('Introduction and Background')
-st.write('Topic')
-st.write('Literature')
-st.write('Datasets')
+st.subheader('Topic')
+st.subheader('Literature')
+st.subheader('Datasets')
 
 # Problem Definition
 st.header('Problem Definition')
@@ -63,15 +90,11 @@ st.write('If all goes well, we expect that our final model will be able to succe
 st.header('References')
 st.write('- IEEE format')
 
+# Gantt Chart
+st.header('Gantt Chart')
+st.markdown('[Click here to view Gantt Chart](Gantt Chart.xlsx)')
 
 
-# Contribution Table
-st.header('Contribution Table')
-st.write('Here are the contributions of each group member to the proposal:')
-contributions = {
-    "Stephan Tserovski": "Problem Definition and Gantt Chart",
-    "Jay Cha": "Potential Results and Discussion",
-    "Narges Moeini": "Methods"
-}
-st.table(contributions)
+
+
 
