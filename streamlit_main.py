@@ -1,5 +1,8 @@
 import streamlit as st
 import pandas as pd
+import os
+
+st.write("Current Working Directory:", os.getcwd())
 
 
 
@@ -63,6 +66,7 @@ st.write('In an effort to solve this problem, we aim to create an AI model that 
 
 
 
+
 # Methods
 st.header('Methods')
 st.write('- **Preprocessing methods**: (3+ preprocessing techniques)')
@@ -99,6 +103,9 @@ df = pd.DataFrame(contributions)
 with st.expander("Contributions Table"):
     st.write(df.to_html(index=False), unsafe_allow_html=True)  # Display the table when the button is clicked
 
+
+# Media
+st.image('./GANTT.png')
 
 
 
