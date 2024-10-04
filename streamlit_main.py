@@ -23,6 +23,27 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+import streamlit as st
+
+# Sidebar
+with st.sidebar:
+    st.title("Sidebar Menu")
+    st.button("Click Me")
+
+# Main content
+st.title("Main Section")
+st.write("Here is the main content of the app.")
+
+# Custom containers for structured layouts
+with st.container():
+    st.header("Section 1")
+    st.write("Content for section 1")
+
+with st.container():
+    st.header("Section 2")
+    st.write("Content for section 2")
+
+
 
 # Title
 st.title('Clickbait Detector Project Proposal')
