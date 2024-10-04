@@ -37,7 +37,7 @@ st.write(
 
 
 
-
+st.image('./clickbait_journalism.webp')
 
     
 
