@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 import os
 
-st.write("Current Working Directory:", os.getcwd())
-
-
 
 # Inject custom CSS
 st.markdown(
