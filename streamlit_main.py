@@ -7,10 +7,10 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-color: #f5f5f5;
+        background-color: #FFFFF;
     }
     .css-18ni7ap.e8zbici2 {
-        background-color: #31333F;
+        background-color: #FFFFF;
     }
     h1, h2, h3 {
         color: #000080;
@@ -20,7 +20,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-import streamlit as st
 
 # Sidebar
 with st.sidebar:
