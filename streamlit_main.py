@@ -12,11 +12,8 @@ st.markdown(
     .css-18ni7ap.e8zbici2 {
         background-color: #31333F;
     }
-    h1 {
-        color: #E694FF;
-    }
-    h2, h3 {
-        color: #1f77b4;
+    h1, h2, h3 {
+        color: #000080;
     }
     </style>
     """,
