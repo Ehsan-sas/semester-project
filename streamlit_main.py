@@ -23,33 +23,21 @@ st.markdown(
 
 # Contributions
 contributions = {
-    "Stephan Tserovski": ["Problem Definition and Gantt Chart"],
-    "Jay Cha": ["Potential Results and Discussion"],
-    "Narges Moeini": ["Methods"]
+    'Name': ['Stephan Tserovski', 'Jay Cha', 'Narges Moreini', 'Ehsan Asadollahi', 'Aristei Zachary'],
+    'Contributions': ['Problem Definition and Gantt Chart','Potential Results and Discussion','Methods','Streamlit and Video','Introduction']
 }
 
 df = pd.DataFrame(contributions)
 
 
 # Sidebar button
-if st.sidebar.button('Show Table'):
+if st.sidebar.button('Contributions'):
     st.write("Here is the table:")
     st.table(df)  # Display the table when the button is clicked
 else:
     st.write("Click the button in the sidebar to see the table.")
 
-# Main content
-st.title("Main Section")
-st.write("Here is the main content of the app.")
 
-# Custom containers for structured layouts
-with st.container():
-    st.header("Section 1")
-    st.write("Content for section 1")
-
-with st.container():
-    st.header("Section 2")
-    st.write("Content for section 2")
 
 
 
