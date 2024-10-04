@@ -79,7 +79,7 @@ st.write('If all goes well, we expect that our final model will be able to succe
 
 # References
 st.header('References')
-st.write('- IEEE format')
+st.write('A. Agrawal, "Clickbait detection using deep learning," 2016 2nd International Conference on Next Generation Computing Technologies (NGCT), Dehradun, India, 2016, pp. 268-272, doi: 10.1109/NGCT.2016.7877426.')
 
 # Gantt Chart
 st.header('Gantt Chart')
