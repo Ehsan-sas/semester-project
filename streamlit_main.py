@@ -20,15 +20,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Contributions
-contributions = {
-    "Stephan Tserovski": "Problem Definition and Gantt Chart",
-    "Jay Cha": "Potential Results and Discussion",
-    "Narges Moeini": "Methods"
-}
-
-df = pd.DataFrame(contributions)
-
 
 # Sidebar
 with st.sidebar:
@@ -39,6 +30,8 @@ with st.sidebar:
 if  st.button('Contribution Table'):
     st.write("Here is the table:")
     st.table(df)  # Display the table when the button is clicked
+else:
+    st.write("Click the button to see the table.")
 
     st.button("Team members")
 
@@ -96,5 +89,12 @@ st.markdown('[Click here to view Gantt Chart](Gantt Chart.xlsx)')
 
 
 
+# Contributions
+contributions = {
+    "Stephan Tserovski": "Problem Definition and Gantt Chart",
+    "Jay Cha": "Potential Results and Discussion",
+    "Narges Moeini": "Methods"
+}
 
+df = pd.DataFrame(contributions)
 
