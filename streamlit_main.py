@@ -20,6 +20,18 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.write(
+    """
+    <style>
+    .dataframe {
+        direction: ltr;
+        text-align: left;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # Contributions
 contributions = {
