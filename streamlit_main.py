@@ -81,7 +81,7 @@ st.write('- IEEE format')
 
 # Gantt Chart
 st.header('Gantt Chart')
-st.image('C:/Users/Ehsan/Personal/Courses/Fall 2024/CS7641 - Machine Learning/Project/Streamlit/ml_streamlit_template/GANTT.png', caption='Gantt Chart', use_column_width=True)
+
 
 
 
