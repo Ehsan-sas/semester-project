@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 
 
+
 # Inject custom CSS
 st.markdown(
     """
@@ -33,13 +34,7 @@ st.write(
 )
 
 
-# Contributions
-contributions = {
-    'Name': ['Stephan Tserovski', 'Jay Cha', 'Narges Moreini', 'Ehsan Asadollahi', 'Aristei Zachary'],
-    'Contributions': ['Problem Definition and Gantt Chart','Potential Results and Discussion','Methods','Streamlit and Video','Introduction']
-}
 
-df = pd.DataFrame(contributions)
 
 
 
@@ -86,11 +81,24 @@ st.write('- IEEE format')
 
 # Gantt Chart
 st.header('Gantt Chart')
-st.markdown('[Click here to view Gantt Chart](Gantt Chart.xlsx)')
+st.image('C:/Users/Ehsan/Personal/Courses/Fall 2024/CS7641 - Machine Learning/Project/Streamlit/ml_streamlit_template/GANTT.png', caption='Gantt Chart', use_column_width=True)
 
-# Contribution Table
+
+
+# Contributions
+st.header('Contributions')
+contributions = {
+    'Name': ['Stephan Tserovski', 'Jay Cha', 'Narges Moreini', 'Ehsan Asadollahi', 'Aristei Zachary'],
+    'Contributions': ['Problem Definition and Gantt Chart','Potential Results and Discussion','Methods','Streamlit and Video','Introduction']
+}
+
+df = pd.DataFrame(contributions)
+
 with st.expander("Contributions Table"):
     st.write(df.to_html(index=False), unsafe_allow_html=True)  # Display the table when the button is clicked
+
+
+
 
 
 
