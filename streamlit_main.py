@@ -87,7 +87,7 @@ st.write('- IEEE format')
 st.header('Gantt Chart')
 with st.expander('Access the Chart'):
     # Media
-    st.image('./GANTT.png', , unsafe_allow_html=True)
+    st.image('./GANTT.png', use_column_width=True)
     
 
 
