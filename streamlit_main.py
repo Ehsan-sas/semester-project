@@ -28,19 +28,6 @@ with st.sidebar:
     st.button("Contribution Table")
     st.button("Team members")
 
-# Main content
-st.title("Main Section")
-st.write("Here is the main content of the app.")
-
-# Custom containers for structured layouts
-with st.container():
-    st.header("Section 1")
-    st.write("Content for section 1")
-
-with st.container():
-    st.header("Section 2")
-    st.write("Content for section 2")
-
 
 
 # Title
