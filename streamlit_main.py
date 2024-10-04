@@ -31,11 +31,11 @@ df = pd.DataFrame(contributions)
 
 
 # Sidebar button
-if st.sidebar.button('Contributions'):
+if st.button('Contributions'):
     with st.expander("Contributions Table"):
-        st.write("Here is the contributions table:")
-        st.table(df)  # Display the table in an expander
-
+        st.write("Here is the table:")
+        st.write(df.to_html(index=False), unsafe_allow_html=True)  # Display the table when the button is clicked
+    
 
 
 
