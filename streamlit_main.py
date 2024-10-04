@@ -35,9 +35,9 @@ st.title('Clickbait Detector Project Proposal')
 
 # Introduction and Background
 st.header('Introduction and Background')
-st.subheader('Topic')
-st.subheader('Literature')
-st.subheader('Datasets')
+st.write('Topic')
+st.write('Literature')
+st.write('Datasets')
 
 # Problem Definition
 st.header('Problem Definition')
@@ -63,9 +63,7 @@ st.write('If all goes well, we expect that our final model will be able to succe
 st.header('References')
 st.write('- IEEE format')
 
-# Gantt Chart
-st.header('Gantt Chart')
-st.markdown('[Click here to view Gantt Chart](Gantt Chart.xlsx)')
+
 
 # Contribution Table
 st.header('Contribution Table')
