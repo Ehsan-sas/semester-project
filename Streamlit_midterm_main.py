@@ -66,7 +66,8 @@ st.write('On the left of this visualization are the pca features ordered from th
 st.image('./Picture 2.png', caption='PCA Results')
 # Next Steps
 st.header('Next Steps')
-st.write('We will want to do further analysis of our models including a more complete breakdown of the most important features of our dataset. We also plan to implement another supervised model to end up with 3 models total by the final report.')
+st.write('Further analysis of our models will be conducted, including a comprehensive breakdown of the most important features in our dataset. To improve data quality, additional data cleaning techniques will be applied, such as handling outliers, managing missing values, and performing advanced text normalization. These steps aim to enhance the dataset's consistency and make the models more robust.
+We also plan to implement an additional supervised model, expanding our approach to include three models in total by the final report. This added model will allow us to compare performance across different supervised learning algorithms and refine our approach to identifying clickbait content. Through these steps, we aim to gain deeper insights into the dataset, optimize model accuracy, and improve overall interpretability.')
 
 # References
 st.header('References')
