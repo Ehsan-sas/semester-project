@@ -76,6 +76,12 @@ st.write('[3] A. Zavalny, “Youtube Clickbait Classification,” Kaggle, 2021.'
 st.write('[4] Y. Kashnitsky, ‘Clickbait news detection’. Kaggle, 2019.')
 st.write('[5] R. Raj, C. Sharma, R. Uttara and C. R. Animon, "A Literature Review on Clickbait Detection Techniques for Social Media," 2024.')
 
+# Gantt Chart
+st.header('Gantt Chart')
+with st.expander('Access the Chart'):
+    # Media
+    st.image('./Gantt.png', use_column_width=True)
+    
 # Contributions Table
 st.header('Contributions')
 contributions = {
