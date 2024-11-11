@@ -52,7 +52,7 @@ st.title('Clickbait Detector Project Proposal')
 st.image('./clickbait_journalism.webp', caption='cyberhoot.com')
 
 # Introduction and Background
-st.header('Introduction and Background')
+st.header('1111111111Introduction and Background')
 st.write('In the digital age, where content is monetized based on views and clicks, content creators often use clickbait—misleading or exaggerated titles to attract attention. This practice frustrates users and spreads misinformation. Detecting and mitigating clickbait is crucial to enhance content quality and user experience. Current models struggle to generalize across various types of media, such as news articles and video titles. To detect clickbait, various proposals have been tested, including simpler supervised classifiers (i.e. Random Forest [1]), and more advanced deep learning methods (e.g. Convolutional Neural Networks [2]). Publically available clickbait datasets also vary, with differing feature sets and lower sample sizes, from social media ranging from YouTube [3] to news sites [4].')
 st.write('This project aims to build a more robust AI model to detect clickbait across different media platforms by analyzing common features of deceptive headlines. By combining data preprocessing and machine learning, the goal is to develop a versatile solution applicable to a wide range of online content [5].')
 
@@ -69,7 +69,7 @@ st.write('To tackle clickbait detection, the project will employ a combination o
 st.write('Both unsupervised and supervised machine learning methods will be explored. K-means clustering, an unsupervised method, will help identify patterns in titles and group similar ones, revealing common clickbait strategies. For supervised learning, logistic regression will be employed for binary classification, determining whether a title is clickbait. Random forest, a more complex algorithm that combines decision trees, will also be used to improve prediction accuracy and handle large datasets.')
 
 # Potential Results and Discussion
-# st.header('Potential Results and Discussion')
+st.header('Potential Results and Discussion')
 st.write('Model performance can be measured using accuracy [7], the fraction of correct predictions on the test set. As this is a binary classification task, additional analysis can be conducted using true or false positives and negatives. For instance, a false negative occurs when a clickbait title is misclassified as non-clickbait. Metrics such as precision, recall, and F1 score will provide a clearer understanding of the model’s strengths and weaknesses. A confusion matrix can be used to visualize the model performance [8].')
 
 st.write('The project expects the final model to successfully identify clickbait titles across various media. If successful, the model could be deployed to help users make more informed content decisions and reduce the spread of deceptive practices online.')
