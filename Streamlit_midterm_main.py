@@ -35,7 +35,7 @@ st.write(
 # Title
 st.title('Clickbait Detector Project Proposal')
 
-st.image('image1', caption='cyberhoot.com')
+st.image('./clickbait_journalism.webp', caption='cyberhoot.com')
 
 # Introduction and Background
 st.header('Introduction and Background')
