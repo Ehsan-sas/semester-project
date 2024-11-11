@@ -53,9 +53,11 @@ st.write('For feature engineering, the add_word_and_character_features function 
 
 # Results and Discussion
 st.header('Results and Discussion')
-st.write('RandomForest Results: Our RandomForest implementation scored a 99% training accuracy, a 99% validation accuracy, and a 90% test accuracy. This tells us that the model is very good at predicting whether or not a given video title is attempting to clickbait users.')
+st.subheader('RandomForest Results:')
+st.write('Our RandomForest implementation scored a 99% training accuracy, a 99% validation accuracy, and a 90% test accuracy. This tells us that the model is very good at predicting whether or not a given video title is attempting to clickbait users.')
 st.image('./Picture 1.png', caption='RandomForest Results')
-st.write('PCA Results: On the left of this visualization are the PCA features ordered from the one which explains the most variance (pca0) to the one which explains the least variance (pca13). At the top are the features of our data, and the matrix shows which feature in our data the given PCA feature represents.')
+st.subheader('PCA Results:')
+st.write('On the left of this visualization are the PCA features ordered from the one which explains the most variance (pca0) to the one which explains the least variance (pca13). At the top are the features of our data, and the matrix shows which feature in our data the given PCA feature represents.')
 st.image('./Picture 2.png', caption='PCA Results')
 # Next Steps
 st.header('Next Steps')
