@@ -52,7 +52,7 @@ st.title('Clickbait Detector Project Proposal')
 st.image('./clickbait_journalism.webp', caption='cyberhoot.com')
 
 # Introduction and Background
-st.header('1111111111Introduction and Background')
+st.header('Introduction and Background')
 st.write('In the digital age, where content is monetized based on views and clicks, content creators often use clickbait—misleading or exaggerated titles to attract attention. This practice frustrates users and spreads misinformation. Detecting and mitigating clickbait is crucial to enhance content quality and user experience. Current models struggle to generalize across various types of media, such as news articles and video titles. To detect clickbait, various proposals have been tested, including simpler supervised classifiers (i.e. Random Forest [1]), and more advanced deep learning methods (e.g. Convolutional Neural Networks [2]). Publically available clickbait datasets also vary, with differing feature sets and lower sample sizes, from social media ranging from YouTube [3] to news sites [4].')
 st.write('This project aims to build a more robust AI model to detect clickbait across different media platforms by analyzing common features of deceptive headlines. By combining data preprocessing and machine learning, the goal is to develop a versatile solution applicable to a wide range of online content [5].')
 
