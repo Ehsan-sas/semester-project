@@ -33,7 +33,7 @@ st.write(
 )
 
 # Title
-st.title('Clickbait Detector - Midterm')
+st.title('Clickbait Detector - Final')
 
 st.image('./clickbait_journalism.webp', caption='cyberhoot.com')
 
