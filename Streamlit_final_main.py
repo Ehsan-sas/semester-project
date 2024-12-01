@@ -56,7 +56,8 @@ st.write('Now that the data has been preprocessed, model implementation and trai
 st.subheader('Second - RandomForest:')
 st.write('The second supervised model has been implemented using a Random Forest algorithm, chosen for its robustness and capability to handle high-dimensional data while capturing complex feature interactions—critical considerations given the diverse set of linguistic and structural features. Additionally, Random Forest’s resilience to overfitting has made it well-suited for accurately distinguishing between clickbait and non-clickbait across varied text samples.')
 st.subheader('Third - SVM:')
-st.write('SVM Method Discussion')
+st.write('The second supervised model has been implemented using a Support Vector Machine (SVM) with a radial basis function (RBF) kernel. SVM was chosen for its ability to handle high-dimensional feature spaces effectively, which is particularly useful given the diverse linguistic and structural attributes engineered in this dataset. The RBF kernel enables the model to capture non-linear relationships between features, making it well-suited for distinguishing between subtle patterns in clickbait and non-clickbait text.')
+st.write('SVM optimizes a decision boundary by maximizing the margin between classes, ensuring robust generalization to unseen data. By tuning hyperparameters such as the regularization parameter C and the kernel coefficient gamma, the model achieves a balance between underfitting and overfitting. A higher value of C allows the model to classify training data more accurately, at the risk of overfitting, while a lower C value encourages a simpler decision boundary for better generalization.')
 
          
 st.write('By employing these three approaches, both interpretability and predictive accuracy have been targeted to improve the model’s ability to identify clickbait content effectively.')
@@ -77,8 +78,10 @@ st.write('Conducting further analysis from our Random Forest model’s results, 
 
 
 st.subheader('SVM Results:')
-st.write('SVM result discussion')
-st.image('./Picture 2.png', caption='SVM Results')
+st.write('The results of the Support Vector Machine (SVM) model with an RBF kernel demonstrate its strong performance in the clickbait detection task. The model achieved an accuracy of 88.4% on the training set and 87.4% on the test set, indicating good generalization with minimal overfitting. The classification report shows high precision, recall, and F1-score for both classes. For the non-clickbait class (label 0), the precision, recall, and F1-score are 0.84, 0.90, and 0.87, respectively, while for the clickbait class (label 1), these metrics are 0.90, 0.85, and 0.88. These results suggest that the model is slightly better at identifying clickbait content than non-clickbait content, likely due to the rich feature engineering process.')
+st.image('./Picture 4.png', caption='SVM Results')
+st.write('The Receiver Operating Characteristic (ROC) curve confirms the model's ability to distinguish between the two classes, with an Area Under the Curve (AUC) of 0.88. This score demonstrates the model's strong discriminative power and its capability to handle the dataset's complexities effectively. Overall, the results reflect that the SVM model is robust and well-suited for the task, leveraging both its ability to capture non-linear relationships through the RBF kernel and the diverse feature set provided. However, further optimization or ensemble approaches might reduce the remaining misclassifications.')
+st.image('./Picture 5.png', caption='SVM Results')
 
 
 st.header('Model Comparison')
