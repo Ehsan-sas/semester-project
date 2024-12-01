@@ -111,7 +111,7 @@ with st.expander('Access the Chart'):
 st.header('Contributions')
 contributions = {
     'Name': ['Stephan Tserovski', 'Jay Cha', 'Zachary Aristei', 'Narges Moeini', 'Ehsan Asadollahi'],
-    'Proposal Contributions': ['Results Discussion and Gantt Chart', 'Data Preprocessing', 'Model and Visualization Coding', 'Model Discussion', 'Streamlit']
+    'Proposal Contributions': ['Feature Analysis and Gantt Chart', 'Model Comparison', 'Video Presentation', 'Model and Visualization Coding', 'Streamlit and Model Discussion']
 }
 
 df = pd.DataFrame(contributions)
