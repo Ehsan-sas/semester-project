@@ -94,7 +94,7 @@ st.write('To summarize, the unsupervised PCA model provides insights on the feat
 
 # Next Steps
 st.header('Next Steps')
-st.write('The next steps involve implementing a practical real-time clickbait detection tool, such as a browser extension or API integration, to filter or flag clickbait dynamically across various platforms. Expanding the dataset to include more diverse and multilingual content will enhance model generalization, while further optimization, such as exploring ensemble methods combining Random Forest and SVM, can improve accuracy and recall. Additionally, refining the Streamlit interface with interactive features will provide users with an intuitive way to upload datasets, view predictions, and interpret feature importance, ensuring the tool's usability and effectiveness.')
+st.write('The next steps involve implementing a practical real-time clickbait detection tool, such as a browser extension or API integration, to filter or flag clickbait dynamically across various platforms. Expanding the dataset to include more diverse and multilingual content will enhance model generalization, while further optimization, such as exploring ensemble methods combining Random Forest and SVM, can improve accuracy and recall. Additionally, refining the Streamlit interface with interactive features will provide users with an intuitive way to upload datasets, view predictions, and interpret feature importance, ensuring the tool usability and effectiveness.')
 
 # References
 st.header('References')
