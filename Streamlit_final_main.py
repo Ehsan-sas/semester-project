@@ -33,7 +33,7 @@ st.write(
 )
 
 # Title
-st.title('Clickbait Detector - Midterm')
+st.title('Clickbait Detector - Final')
 
 st.image('./clickbait_journalism.webp', caption='cyberhoot.com')
 
@@ -81,7 +81,7 @@ st.subheader('SVM Results:')
 st.write('The results of the Support Vector Machine (SVM) model with an RBF kernel demonstrate its strong performance in the clickbait detection task. The model achieved an accuracy of 88.4% on the training set and 87.4% on the test set, indicating good generalization with minimal overfitting. The classification report shows high precision, recall, and F1-score for both classes. For the non-clickbait class (label 0), the precision, recall, and F1-score are 0.84, 0.90, and 0.87, respectively, while for the clickbait class (label 1), these metrics are 0.90, 0.85, and 0.88. These results suggest that the model is slightly better at identifying clickbait content than non-clickbait content, likely due to the rich feature engineering process.')
 st.image('./Picture 4.png', caption='SVM Results')
 st.write('The Receiver Operating Characteristic (ROC) curve confirms the models ability to distinguish between the two classes, with an Area Under the Curve (AUC) of 0.88. This score demonstrates the models strong discriminative power and its capability to handle the datasets complexities effectively. Overall, the results reflect that the SVM model is robust and well-suited for the task, leveraging both its ability to capture non-linear relationships through the RBF kernel and the diverse feature set provided. However, further optimization or ensemble approaches might reduce the remaining misclassifications.')
-st.image('./Picture 5.png', caption='SVM Results')
+st.image('./Picture 6.png', caption='SVM Results')
 
 
 st.header('Model Comparison')
@@ -89,7 +89,7 @@ st.write('The three models that we have implemented in this project are PCA, Ran
 st.write('Supervised learning methods, which include our Random Forest and SVM classifiers, are able to solve this problem. These methods can learn the relationships between the data and the labels during training and make predictions for classification. We will now compare our Random Forest and SVM models in detail.')
 st.write('In terms of performance, both the Random Forest and SVM models achieve high accuracies on the test set, with the Random Forest model performing slightly better. Examining the confusion matrices, we can see that the largest discrepancy lies in how the models classify positive examples corresponding to the “1” label (clickbait titles). Compared to the Random Forest model, the SVM model incorrectly classifies more clickbait titles as non-clickbait. So while the two models have similar precision scores, the SVM model obtains a significantly worse recall score.')
 st.write('SVM classifiers work well when the classes are cleanly separated in a high-dimensional space because they create smooth decision boundaries that maximize the gap between the classes. Based on the relatively poor performance of our SVM model, we can infer that this may not be the case for our dataset. Random Forest classifiers, on the other hand, can perform well even when the classes are not easily separable because the decision boundary can be made arbitrarily complex (at the risk of overfitting).')
-st.write('Another way in which our two supervised methods differ is the time needed to train the models and make predictions. The SVM model is much slower compared to the Random Forest model, taking approximately 34 times as long to train (70.9 seconds vs. 2.1 seconds locally), and about 71 times as much to classify the test set (0.9137 seconds vs. 0.0128 seconds). The reason the SVM model takes so much longer is because the non-linear kernel requires operations on large matrices when there are many data points, whereas the calculations required for the Random Forest are simpler.')
+st.write('Another way in which our two supervised methods differ is the time needed to train the models and make predictions. The SVM model is much slower compared to the Random Forest model, taking approximately 34 times as long to train (70.9 seconds vs. 2.1 seconds locally), and about 71 times as much to classify the test set (0.9137 seconds vs. 0.0128 seconds). The Random Forest model is significantly faster because its trees can be trained in parallel, and sklearn's implementation of Random Forest leverages multi-threading. In contrast, the SVM model operates as a single-threaded algorithm. While large kernel matrices in SVMs (~30k×30k floats, approximately 3GB) can create a memory bottleneck if RAM is insufficient, this primarily affects memory rather than compute speed. On a machine with 16GB of RAM, a single-threaded Random Forest may have a runtime comparable to SVM, but parallelization makes Random Forest much more efficient in practice.')
 st.write('To summarize, the unsupervised PCA model provides insights on the features of our dataset, while among the two supervised models, the Random Forest classifier is more suitable for our task, both in terms of performance and time efficiency.')
 
 # Next Steps
